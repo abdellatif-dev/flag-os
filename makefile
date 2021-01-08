@@ -7,5 +7,11 @@ run:
 	make build
 	qemu-system-x86_64 -kernel os/flagos.bin
 
+isofile:
+	make clean	
+	make 
+	cp os/flagos.bin iso/boot/
+	grub-mkrescue -o flagos.iso iso/
+
 clean:
-	rm bin/*  os/* -f
+	rm bin/* *.iso os/* iso/boot/flagos.bin -f
