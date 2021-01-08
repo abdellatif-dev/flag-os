@@ -1,6 +1,5 @@
+#include "include/screen.h"
 flagmain () {
-  char* vidmem = (char*)0xb8000;
-  vidmem[0] = 'A';
-  vidmem[1] = 0x07;
-  
+ clearScreen();
+ print("welcome to flag_os\nthe project is on github");
 }
