@@ -12,6 +12,7 @@ isofile:
 	make 
 	cp os/flagos.bin iso/boot/
 	grub-mkrescue -o flagos.iso iso/
+	cp flagos.iso /home/flagmate/.local/share/libvirt/images/flagos.iso
 
 clean:
-	rm bin/* *.iso os/* iso/boot/flagos.bin -f
+	rm bin/* *.iso os/* iso/boot/flagos.bin /home/flagmate/.local/share/libvirt/images/flagos.iso -f
