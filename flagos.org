@@ -1,0 +1,21 @@
+* flag_os
+** tools
+   - testing
+     
+#+begin_src shell
+  # debian linux 
+  sudo apt-get install qemu virt-manager
+  # arch linux
+  sudo pacman -S qemu virt-manager
+
+#+end_src
+   - assember
+
+#+begin_src shell
+  #debian
+  sudo apt install nasm 
+  # arch linux
+  sudo pacman -S nasm
+#+end_src
+** languages
+   - assembly
