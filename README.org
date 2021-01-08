@@ -1,21 +1,18 @@
 * flag_os
 ** tools
-   - testing
-     
 #+begin_src shell
   # debian linux 
-  sudo apt-get install qemu virt-manager
+  sudo apt-get install qemu virt-manager nasm grub # i'm so sure about the name of packages
   # arch linux
-  sudo pacman -S qemu virt-manager
+  sudo pacman -S qemu virt-manager nasm grub --needed #avoid reinstalling packages 
 
-#+end_src
-   - assember
-
-#+begin_src shell
-  #debian
-  sudo apt install nasm 
-  # arch linux
-  sudo pacman -S nasm
 #+end_src
 ** languages
-   - assembly
+   - assembly language
+   - c language
+
+** general info about the os
+*** system arch
+    it's a 32 bits operating system 
+*** multiboot system
+    it uses grub as bootloader
