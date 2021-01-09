@@ -1,5 +1,6 @@
-#include "include/screen.h"
+#include "include/functions.h"
+
 flagmain () {
- clearScreen();
- print("welcome to flag_os\nthe project is on github");
+    printchar('A', 0x02);
+    
 }
