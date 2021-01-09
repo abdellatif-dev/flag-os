@@ -1,6 +1,5 @@
 #include "include/functions.h"
 
 flagmain () {
-    printchar('A', 0x02);
-    
+  printchar('T', 0x04);
 }
