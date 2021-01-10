@@ -14,5 +14,9 @@ isofile:
 	grub-mkrescue -o flagos.iso iso/
 	cp flagos.iso /home/flagmate/.local/share/libvirt/images/flagos.iso
 
+testiso:
+	make isofile
+	qemu-system-x86_64 -cdrom flagos.iso
+
 clean:
 	rm bin/* *.iso os/* iso/boot/flagos.bin /home/flagmate/.local/share/libvirt/images/flagos.iso -f
