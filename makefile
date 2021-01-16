@@ -8,8 +8,8 @@ run:
 	qemu-system-x86_64 -kernel os/flagos.bin
 
 isofile:
-	make clean	
-	make 
+	make clean
+	make
 	cp os/flagos.bin iso/boot/
 	grub-mkrescue -o flagos.iso iso/
 	cp flagos.iso /home/flagmate/.local/share/libvirt/images/flagos.iso

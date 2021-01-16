@@ -1,5 +1,7 @@
 #include "include/functions.h"
 
-flagmain () {
-  printchar('A', 0x04);
+void flagmain () {
+  printchar('H', 0x04);
+
+  printchar('I', 0x04);
 }
